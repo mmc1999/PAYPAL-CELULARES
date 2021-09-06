@@ -1,0 +1,157 @@
+
+.formularioPosta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.inputsForm, .textArea {
+    margin: 20px 0px;
+    width: 100%;
+    border: none;
+    border-bottom: thin solid #36536b80;
+    background-color: transparent;
+    padding: 3px 0px 15px 10px;
+    color: #36536bd0;
+    outline: none;
+    resize: none;
+}
+
+.inputsForm::placeholder, .textArea::placeholder {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+/*input[type="checkbox"] {
+    
+}
+input[type="checkbox"] + label {
+    cursor: pointer;
+}
+label::before {
+    content: 'd';
+    background-color: #36536b73;
+    width: 20px;
+    margin-right: 40px;
+}   
+input[type="checkbox"]:checked + label::before{
+    content: "✔";
+    background-color: #BA4270;
+    
+}*/
+.pcheck {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: #36536B;
+}
+.h2gral {
+    opacity: 0.75;
+}
+
+.divLogoEmpresa {
+    margin-top: 30px;
+    padding: 0px 40px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 120px 120px;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;*/
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
+.logoEmpresas {
+    filter: none;
+    width: 100px;
+    align-self: center;
+}
+.mensajeError {
+    margin:0px 10px 10px 10px ;
+}
+.inputsFormInvalido{
+    border-bottom: thin solid #ff000073;
+    color: #ff000073;
+}
+.inputsForm::placeholder:invalid {
+    color: #ff000073;
+}
+.inputsForm:valid{
+    border-bottom: thin solid inherit;
+    color: inherit;
+}
+.formEnviado {
+    display: none;
+    color: green;
+    font-size: 15px;
+}
+.formEnviado.active {
+    display: block;
+}
+
+@media all and (min-width:768px) {
+    .h1About {
+        width: 450px;
+        margin: 0% auto;
+    }
+    .formularioPosta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        margin: 40px auto;
+    }
+    .btnsubmit {
+        align-self: flex-start;
+    }
+    .btnsubmit:hover {
+        background-color: #36536B;
+        color: white;
+        transition: 500ms;
+    }
+    .h2gral {
+        width: 450px;
+        margin: 0% auto;
+    }
+    .divLogoEmpresa {
+        grid-template-columns: 120px 120px 120px;
+    }
+}
+@media all and (min-width:1200px) {
+    .main {
+        display: grid;
+        grid-template-areas: 
+        "h1 h1"
+        "form logos"
+        "fr fr";
+        margin-top: 70px;
+    }
+    .h1About {
+        grid-area: h1;
+        line-height: 56px;
+        margin: 0px;
+        width: 850px;
+        font-size: 56px;
+    }
+    .formularioPosta {
+        grid-area: form;
+        margin-left: 0%;
+        align-items: baseline;
+    }
+    .divlogo {
+        grid-area: logos;
+        align-self: center;
+    }
+    .divForm {
+        grid-area: fr;
+    }
+}

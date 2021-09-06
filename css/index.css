@@ -1,0 +1,613 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    overflow-x: hidden;
+    background-color: #FBFCFE;
+    margin: 0%;
+    padding: 0%;
+    /*
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Public Sans', sans-serif;
+    */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../assets/shared/desktop/bg-pattern-circle.svg');
+    background-repeat: no-repeat;
+    background-position: 50% -20%;
+    text-align: center;
+}
+.dmserif {
+    font-family: 'DM Serif Display', serif;
+}
+.public-sans {
+    font-family: 'Public Sans', sans-serif;
+}
+.body {
+    background-image: url('../assets/shared/desktop/bg-pattern-circle.svg');
+    background-repeat: no-repeat;
+    background-position: 120px -30%;
+    text-align: center;
+}
+.main, .padding {
+    padding: 20px;
+}
+button, input {
+    cursor: pointer;
+}
+/*----------------------------------- HEADER -----------------------------------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+.imagenLogo {
+    width: 120px;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 80%;
+    background-color: #1B262F;
+    padding: 30px ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transition: 500ms;
+    z-index: 1000;
+}
+.nav.open {
+    right: 0%;
+}
+.imagenCruz {
+    align-self: flex-end;
+}
+.ul {
+    padding: 5px 0%;
+    margin: 25px 0%;
+    width: 100%;
+    height: 100%;
+    border-top: thin solid;
+    border-top-color: #c7c7c757;
+    list-style: none;
+}   
+.ulLI {
+    list-style: none;
+    margin: 30px 0px;
+}
+.enlaceNavegacionInterna {
+    text-decoration: none;
+    color: #FBFCFE;
+    opacity: 0.7;
+    font-size: 20px;
+}
+.demo {
+    background: #BA4270;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    padding: 20px;
+}
+.demoenlace {
+    color: #ffffff;
+    font-size: 15px;
+
+}
+/*----------------------------------- MAIN -----------------------------------*/
+.primerArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.celularAdvertencia {
+    margin-left: 40px;
+    width:200px;
+}
+.h1About {
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.246154px;
+    color: #36536B;
+    margin-bottom: 50px;
+    font-family: 'DM Serif Display', serif;
+}
+.input {
+    background: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    border: thin solid rgba(54, 83, 107, 0.25);
+    padding: 15px 30px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 18px;  
+    outline: none;
+}
+.botonDemo{
+    margin-top: 15px;
+    background: #BA4270;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    padding: 15px;
+    width: 100%;
+    color: #FBFCFE;
+    border: none;
+}
+.botonDemo:hover, .demo:hover  {
+    background-color: #DA6D97;
+    transition: 500ms;
+} 
+
+
+.pregunta {
+    font-weight: 400;
+    color: #6C8294;
+    font-size: 15px;
+    line-height: 18px;
+}
+.aContacto {
+    color: #6C8294;
+    opacity: 1;
+    text-decoration: none;
+    font-weight: 700;
+}
+.tercerArticle {
+    background-color: #1B262F;
+    padding: 80px 20px 20px 20px;
+}
+.divLogoEmpresa {
+    padding: 0px 40px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;*/
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
+.logoEmpresas {
+    filter: saturate(0%) invert(1);
+    width: 100px;
+    align-self: center;
+}
+.segundoDiv {
+    margin: 60px 0px;
+}
+.segundoDiv h2{
+    opacity: 1;
+}
+.parrafo {
+    color:#FBFCFE;
+    opacity: 0.7;
+}
+.pEnlace {
+    margin: 50px 0px;
+}
+.enlaceSobreNosotros {
+    text-decoration: none;
+    color: #FBFCFE;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.enlaceSobreNosotros:hover {
+    background-color: #FFFFFF;
+    color: #1B262F;
+    transition: 500ms;
+}
+.cuartoArticle {
+    padding: 20px;
+}
+.cuartoArticle > div {
+    margin: 80px 0px;
+}
+.cuartoArticle section {
+    margin: 90px 0px;
+}
+.cuartoArticle section > * {
+    margin: 60px 0px;
+}
+.imagenCodigo {
+    margin-left: 10px;
+}
+.tituloh2articlecuarto {
+    margin-top: 0%;
+    font-weight: 400;
+    color: #36536B;
+    letter-spacing: -0.276923px;
+}
+.h2gral {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.184615px;
+    color: #36536B;
+    font-weight: 400;
+}
+.parrafoh2article {
+    font-size: 15px;
+    line-height: 28px;
+    color: #6C8294;
+}
+.h3cuartoArticle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.138462px;
+    color: #36536B;
+}
+.ph3cuartoArticle {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: #6C8294;
+}
+.titleForm {
+    /*margin-top: 100px;*/
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.246154px;
+    color: #36536B;
+}
+img {
+    max-width: 100%;
+    height: auto;    
+}
+
+footer {
+    background-color: #1B262F;
+    padding: 30px;
+}
+.primerDivFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logoEmpresa {
+    filter: invert(1);
+}
+footer div a {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FBFCFE;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    text-decoration: none;
+    margin: 20px 0px;
+}
+.segundoDivFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoRedesSoc {
+    filter: saturate(20%);
+}
+.btnsubmit {
+    border-radius: 20px;
+    width: 152px;
+    height: 48px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    color: #36536B;
+    background-color: transparent;
+    border:thin solid black;
+}
+
+.mensajeError, .mensajeError1 {
+    display: none;
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.0846154px;
+    color: #FF0000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin:0px 10px 10px 10px ;
+}
+.mensajeError1 {
+    position: absolute;
+    top: 112%;
+}
+.formEnviado {
+    display: none;
+    color: green;
+    font-size: 15px;
+}
+
+.inscripcion.active {
+    display: block;
+}
+.inputsFormInvalido{
+    border: thin solid #ff000073;
+    color: #ff000073;
+}
+.inputsForm::placeholder:invalid {
+    color: #ff000073;
+}
+.inputsForm:valid{
+    border-bottom: thin solid inherit;
+    color: inherit;
+}
+.divForm {
+    position: relative;
+}
+.inscripcion {
+    display: none; 
+    color: green;
+    font-size: 15px;
+    position: absolute;
+    top: 91%;
+    left: 0%;
+}
+@media all and (min-width:768px) {
+    body {
+        background-position: top -150vh left 0vw;
+        background-size: contain;
+        background-attachment: attachment;
+    }
+    .body {
+        background-position: 400px -40%;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        padding-top: 0%;
+        height: 125px;
+    }
+    .imagenLogo {
+        width: 120px;
+    }
+    .nav {
+        position: relative;
+        top: 0;
+        right: 0%;
+        height: 100%;
+        width: 80%;
+        background-color: transparent;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: center;
+        flex-direction: column;
+        transition: 500ms;
+    }
+    .imagenCruz, .btnBurguer, .divbtnBurguer {
+        display: none;
+    }
+    .ul {
+        padding: 5px 0%;
+        margin: 25px 0%;
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        border: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }   
+    .ulLI {
+        display: inline;
+        list-style: none;
+        
+    }
+    .enlaceNavegacionInterna {
+        text-decoration: none;
+        color: #36536B;
+        opacity: 0.7;
+        font-size: 15px;
+        margin: 30px 0px;
+    }
+    .enlaceNavegacionInterna:hover {
+        color: #36536B;
+        opacity: 1;
+        transition: 500ms;
+    }
+    .demoenlace {
+        color: white;
+        opacity: 1;
+    }
+    .h1About {
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .formulario {
+        position: relative;
+    }
+    .input {
+        height: 50px;
+        width: 60%;
+    }
+    .botonDemo {
+        position: absolute;
+        width: 250px;
+        right: 20px;
+        bottom: 38.5%;
+        height: 50px;
+    }
+    .tercerArticle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .divLogoEmpresa {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 200px);
+        margin: 30px 0px;
+    }
+    .segundoDiv {
+        margin: 0%;
+        width: 400px;
+    }
+    .segundoDiv h2 {
+        font-size: 48px;
+    }
+    .parrafoh2article {
+        width: 400px;
+        margin: 0% auto;
+    }
+    .sectionInfo {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .sectionInfo img {
+        width: 88px;
+    }
+    .btndemo1 {
+        bottom: 0;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .primerDivFooter {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+    .divForm {
+        margin-top: 80px;
+    }
+    .inscripcion {
+        display: none;
+        color: green;
+        font-size: 15px;
+        position: absolute;
+        top: 80%;
+        left: 5%;
+    }
+}
+
+@media all and (min-width:1200px) {
+    body {
+        background-position: 400px -800px;
+        background-attachment:initial ;
+        background-size: contain;
+        
+    }
+    .padding2 {
+        padding: 0px 120px;
+    }
+    .header {
+        justify-content: space-between;
+
+    }
+    .ul {
+       justify-content: flex-end; 
+       gap: 100px;
+    }
+    .primerArticle {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-areas: "left rigth";
+        align-items: center;
+    }
+    .celularAdvertencia {
+        width:330px;
+        grid-area: rigth;
+        align-self: center;
+        margin: 0%;
+    }   
+    .divForm {
+        grid-area: left;
+        margin-top: 0%;
+    }
+    .h1About {
+        text-align: left;
+        font-size: 72px;
+        width: 570px;
+        margin: 20px 0px 50px 0px;
+    }
+    .formulario {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .input{
+        width: 400px
+    }
+    .botonDemo {
+        width: 200px;
+        bottom: 48px;
+        right: -10%;
+    }
+    .tercerArticle {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding: 0px 120px;
+        
+    }
+    .divLogoEmpresa {
+        grid-template-columns: repeat(3, 120px);
+    }
+    .segundoDiv {
+
+        text-align: left;
+    }
+    .divLogoEmpresa {
+        padding:0px;
+    }
+    .darVueltaImagen {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .darVueltaImagen1 {
+        flex-direction: row-reverse;
+    }
+    .divDentro {
+        grid-area: right;
+    }
+    .imagenCodigo, .imagenCodigodarVueltaImagen {
+        width: 400px;
+    }
+    .cuartoArticle section {
+        gap: 40px;
+    }
+    .divForm1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .btndemo1 {
+        right: 0;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,130 @@
+
+.divDespuesH1 {
+    margin: 50px 0px;
+}
+.h2gral {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.184615px;
+    color: #36536B;
+    font-weight: 400;
+}
+.todosParrafos {
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: #6C8294;
+}
+.tresPersonasHablandomobile {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+.tresPersonasHablandodesktop, .tresPersonasHablandotablet {
+    display: none;
+}
+.sectionInfo {
+    border-top: thin solid #36536b5d;
+    border-bottom: thin solid #36536b5d;
+    mix-blend-mode: normal;
+    margin: 30px 0px;
+    padding: 10px 0px;
+}
+.infochica {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    margin-bottom: 0%;
+}
+.infoGrande {
+    font-size: 56px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -0.430769px;
+    color: #BA4270;
+    margin: 0%;
+}
+.divDespuesDelSection {
+    margin: 50px 0px;
+}
+
+@media all and (min-width:768px) { 
+    .h1About {
+        width: 450px;
+        margin: 0% auto;
+    }
+    .divDespuesH1, .divDespuesDelSection {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .h2gral {
+        font-size: 32px;
+        width: 150px;
+        margin: 0;
+    }
+    .todosParrafos {
+        text-align: left;
+        margin: 0;
+    }
+    .tresPersonasHablandotablet {
+        display: initial;
+        width: 100%;
+    }
+    .tresPersonasHablandomobile, .tresPersonasHablandodesktop {
+        display: none;
+    }
+    .sectionInfo {
+        border: none;
+        display: flex;
+        gap: 20px;
+
+    }
+    .sectionInfo div{
+        border-top: thin solid #36536b5d;
+        border-bottom: thin solid #36536b5d;
+        width: 200px;
+    }
+}
+
+@media all and (min-width:1200px) { 
+    .tresPersonasHablandomobile, .tresPersonasHablandotablet {
+        display: none;
+    }
+    .tresPersonasHablandodesktop {
+        display: initial;
+        width: 100%;
+    }
+    .h1About {
+        margin: 0;
+        width: 730px;
+        margin-bottom: 100px;
+    }
+    .articlegral {
+        width: 920px;
+        margin: 50px auto;
+    }
+    .h2gral {
+        width: 220px;
+        text-align:start;
+    }
+    .sectionInfo {
+        width: 1110px;
+        justify-content: space-around;
+        margin: 0% auto;
+    }
+    .sectionInfo > div {
+        width: 350px;
+        
+    }
+    .infochica, .infoGrande {
+        text-align: left;
+    }
+    .divForm {
+        width: 1110px;
+        margin: 100px auto;
+    }
+}

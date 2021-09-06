@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans&display=swap"
+    rel="stylesheet">
+  <title>Contact</title>
+  <script src="/js/include.js"></script>-
+</head>
+
+<body class="body">
+  <header class="header padding2">
+    <div>
+      <img src="assets/shared/desktop/logo.svg" alt="imagen del logo" class="imagenLogo">
+    </div>
+    <nav class="nav">
+      <img src="assets/shared/mobile/close.svg" alt="imagen de una cruz" class="imagenCruz">
+      <ul class="ul">
+        <li class="ulLI"><a class="enlaceNavegacionInterna public-sans" href="pricing.html">Pricing</a></li>
+        <li class="ulLI"><a class="enlaceNavegacionInterna public-sans" href="about.html">About</a></li>
+        <li class="ulLI"><a class="enlaceNavegacionInterna public-sans" href="contact.html">Contact</a></li>
+        <li class="ulLI demo"><a class="enlaceNavegacionInterna public-sans demoenlace" href="index.html">Schedule a
+            Demo</a></li>
+      </ul>
+    </nav>
+    <div>
+      <img src="assets/shared/mobile/menu.svg" alt="icono de menu" class="btnBurguer">
+    </div>
+  </header>
+  <main class="main padding2">
+    <h1 class="h1About">Submit a help request and we’ll get in touch shortly.</h1>
+    <form action="" class="formularioPosta">
+      <input type="text" placeholder="Name" id="name" required name="name" class="inputsForm public-sans">
+      <p class="mensajeError">This field can’t be empty</p>
+      <input type="email" placeholder="Email Address" id="email" required name="mail" class="inputsForm public-sans">
+      <p class="mensajeError">This field can’t be empty</p>
+      <input type="text" placeholder="Company Name" id="company" required name="company" class="inputsForm public-sans">
+      <p class="mensajeError">This field can’t be empty</p>
+      <input type="text" placeholder="Title" id="title" required name="title" class="inputsForm public-sans" >
+      <p class="mensajeError">This field can’t be empty</p>
+      <textarea id="" cols="30" rows="10" id="textarea" required name="textarea" placeholder="Message" class="textArea public-sans" minlength="20"></textarea>
+      <p class="mensajeError">This field can’t be empty</p>
+      <p class="public-sans pcheck"><input type="checkbox" id="check" required name="check" class="checkbox">
+        Stay up-to-date with
+        company announcements and updates to our API</p>
+      <p class="mensajeError">This field can’t be empty</p>
+      <button type="submit" class="public-sans btnsubmit">Submit</button>
+      <p class="formEnviado">El formulario ha sido enviado</p>
+    </form>
+    <div class="divlogo">
+      <h2 class="dmserif h2gral">Join the thousands of innovators already building with us</h2>
+      <div class="divLogoEmpresa">
+        <img class="logoEmpresas" src="assets/shared/desktop/tesla.svg" alt="logo de tesla">
+        <img class="logoEmpresas" src="assets/shared/desktop/microsoft.svg" alt="logo de microsoft">
+        <img class="logoEmpresas" src="assets/shared/desktop/hewlett-packard.svg" alt="logo de hewlett-packard">
+        <img class="logoEmpresas" src="assets/shared/desktop/oracle.svg" alt="logo de oracle">
+        <img class="logoEmpresas" src="assets/shared/desktop/google.svg" alt="logo de google">
+        <img class="logoEmpresas" src="assets/shared/desktop/nvidia.svg" alt="logo de nvidia">
+      </div>
+    </div>
+
+    <div class="divForm divForm1">
+      <h2 class="dmserif titleForm">Ready to start?</h2>
+      <form action="" class="formulario">
+        <input type="email" placeholder="Enter email address" class="input public-sans" name="email1">
+        <p class="mensajeError1">This field can’t be empty</p>
+        <button type="submit" class="botonDemo btndemo1">Schedule a Demo</button>
+        <p class="inscripcion">Gracias por subscribirse</p>
+      </form>
+    </div>
+  </main>
+  <div data-include="includeHTML/footer.html"></div>
+  <script src="js/index.js"></script>
+  <script src="js/formPosta.js"></script>
+</body>
+
+</html>

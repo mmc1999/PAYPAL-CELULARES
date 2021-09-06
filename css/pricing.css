@@ -1,0 +1,139 @@
+.typePlan {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.184615px;
+    color: #BA4270;
+}
+.infoPlan {
+    display: none;
+}
+.valorPlan {
+    font-size: 56px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -0.430769px;
+    color: #36536B;
+}
+
+.divBeneficios {
+    border-top: thin solid #36536b5d;
+    border-bottom: thin solid #36536b5d;
+    margin: 30px auto;
+    position: relative;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.agregarCheck::before {
+    position: absolute;
+    left: 16%;
+    content: url('../assets/shared/desktop/icon-check.svg');
+    width: 20px;
+}
+.pBeneficio {
+    font-size: 16px;
+    line-height: 28px;
+    color: #36536b83;
+    margin-left: 70px;
+}
+.agregarCheck {
+    color: #36536B;
+}
+.asubmit {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    color: #36536B;
+    background-color: transparent;
+    border:thin solid black;
+    text-decoration: none;
+}
+.asubmit:hover {
+        background-color: #607281;
+        color: #FBFCFE;
+        transition: 500ms ease-in-out;
+    }
+@media all and (min-width:768px) {
+    
+    .sectionTresPrecios {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .divCompleto {
+        margin: 0px 20px;
+    }
+    .valorPlan {
+        font-size: 48px;
+    }
+    .divBeneficios {
+        width: 220px;
+    }
+    .infoPlan {
+        display: initial;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: center;
+        color: #6C8294;
+    }
+    .divForm {
+        margin-top: 80px;
+    }
+    
+    
+}
+@media all and (min-width:1200px) {
+    .body {
+        background-position: top 50vh left 50vw;
+        background-attachment:initial ;
+        background-size: contain;
+    }
+    .main {
+        padding: 0px;
+    }
+    .divForm {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sectionTresPrecios {
+        justify-content: space-between;
+        padding: 0%;
+        gap: 20px;
+    }
+    .divCompleto {
+        margin: 0px; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .divBeneficios {
+        width: 100%;
+        margin: 0% 0%;
+    }
+    .agregarCheck::before {
+        left: 0%;
+    }
+    .divCompleto .infoPlan {
+        text-align: left;
+        display: inherit;
+    }
+    .asubmit {
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+    /*.asubmit:hover {
+        background-color: #607281;
+        color: #FBFCFE;
+        transition: 500ms ease-in-out;
+    }*/
+}
